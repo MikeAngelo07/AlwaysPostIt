@@ -56,5 +56,11 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            Clipboard.SetText(textBox1.Text);
+        }
     }
 }
