@@ -59,8 +59,11 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            Clipboard.SetText(textBox1.Text);
+            try
+            {
+                Clipboard.SetText(textBox1.Text);
+            }
+            catch { }
         }
     }
 }
